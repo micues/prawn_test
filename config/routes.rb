@@ -1,4 +1,9 @@
 PrawnTest::Application.routes.draw do
+  resources :products do
+	get :print1, :on => :collection
+	get :print2, :on => :collection
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
